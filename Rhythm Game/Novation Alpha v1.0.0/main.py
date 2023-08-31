@@ -1012,12 +1012,8 @@ while IsRunning:
             Pattern = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
             combo = 0
             Bar = 0
-            Time1 = 0
-            Time2 = 0
-            Compile_Time = 0
-            Result_Entrance_Time = Time - Time_Measure
-            Fade_Time = Time
             Window = 'Result'
+            Fade_Time = Time
             WindowPlay = 0
 
         #Set BG
