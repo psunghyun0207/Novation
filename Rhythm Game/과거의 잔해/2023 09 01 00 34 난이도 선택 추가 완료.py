@@ -827,9 +827,9 @@ while IsRunning:
         Font_Song_Select = Combo_Font.render(str("SELECT SONG"), True, WHITE)
         Font_Song_Name = Combo_Font.render(str("%s" %jacket_Name[Current_jacket]), True, WHITE)
         Font_Song_Writer = Writer_Font.render(str(Song_Writer[Current_jacket]), True, WHITE)
-        Font_Level_Easy = Writer_Font.render(str("EASY %d" %Level[Current_jacket][0]), True, WHITE)
-        Font_Level_Normal = Writer_Font.render(str("NORMAL %d" %Level[Current_jacket][1]), True, WHITE)
-        Font_Level_Hard = Writer_Font.render(str("HARD %d" %Level[Current_jacket][2]), True, WHITE)
+        Font_Level_Easy = Writer_Font.render(str("LV : %d" %Level[Current_jacket][0]), True, WHITE)
+        Font_Level_Normal = Writer_Font.render(str("LV : %d" %Level[Current_jacket][1]), True, WHITE)
+        Font_Level_Hard = Writer_Font.render(str("LV : %d" %Level[Current_jacket][2]), True, WHITE)
 
         #Get Song Name Font Size
         Font_Song_Name_Size = Font_Song_Name.get_size()
@@ -972,7 +972,7 @@ while IsRunning:
                     Time = time.time() - Time_Measure
                     Fade_Time = Time
                     Start_Time = Time
-
+                    
                     Window = 'InGame'
                     WindowPlay = 0
                         
