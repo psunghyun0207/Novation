@@ -1354,7 +1354,7 @@ while IsRunning:
                         print("AutoMode ON")
 
 
-                if event.key == pygame.K_1 or event.key == pygame.K_KP1:
+                if event.key == pygame.K_1 or event.key == pygame.K_KP1 or event.key == pygame.K_z:
                     SoundChannel_HITSOUND.play(Hit_Sound)
                     key_Press[0] = 1
                     if len(t1) > 0:
@@ -1362,7 +1362,7 @@ while IsRunning:
                             judge(t1[0][0])
                             del t1[0]
                         
-                if event.key == pygame.K_2 or event.key == pygame.K_KP2:
+                if event.key == pygame.K_2 or event.key == pygame.K_KP2 or event.key == pygame.K_x:
                     SoundChannel_HITSOUND.play(Hit_Sound)
                     key_Press[1] = 1
                     if len(t2) > 0:
@@ -1370,7 +1370,7 @@ while IsRunning:
                             judge(t2[0][0])
                             del t2[0]
 
-                if event.key == pygame.K_3 or event.key == pygame.K_KP3:
+                if event.key == pygame.K_3 or event.key == pygame.K_KP3 or event.key == pygame.K_c:
                     SoundChannel_HITSOUND.play(Hit_Sound)
                     key_Press[2] = 1
                     if len(t3) > 0:
@@ -1378,7 +1378,7 @@ while IsRunning:
                             judge(t3[0][0])
                             del t3[0]
 
-                if event.key == pygame.K_4 or event.key == pygame.K_KP4:
+                if event.key == pygame.K_4 or event.key == pygame.K_KP4 or event.key == pygame.K_a:
                     SoundChannel_HITSOUND.play(Hit_Sound)
                     key_Press[3] = 1
                     if len(t4) > 0:
@@ -1386,7 +1386,7 @@ while IsRunning:
                             judge(t4[0][0])
                             del t4[0]
 
-                if event.key == pygame.K_5 or event.key == pygame.K_KP5:
+                if event.key == pygame.K_5 or event.key == pygame.K_KP5 or event.key == pygame.K_s:
                     SoundChannel_HITSOUND.play(Hit_Sound)
                     key_Press[4] = 1
                     if len(t5) > 0:
@@ -1394,7 +1394,7 @@ while IsRunning:
                             judge(t5[0][0])
                             del t5[0]
 
-                if event.key == pygame.K_6 or event.key == pygame.K_KP6:
+                if event.key == pygame.K_6 or event.key == pygame.K_KP6 or event.key == pygame.K_d:
                     SoundChannel_HITSOUND.play(Hit_Sound)
                     key_Press[5] = 1
                     if len(t6) > 0:
@@ -1402,7 +1402,7 @@ while IsRunning:
                             judge(t6[0][0])
                             del t6[0]
 
-                if event.key == pygame.K_7 or event.key == pygame.K_KP7:
+                if event.key == pygame.K_7 or event.key == pygame.K_KP7 or event.key == pygame.K_q:
                     SoundChannel_HITSOUND.play(Hit_Sound)
                     key_Press[6] = 1
                     if len(t7) > 0:
@@ -1410,7 +1410,7 @@ while IsRunning:
                             judge(t7[0][0])
                             del t7[0]
 
-                if event.key == pygame.K_8 or event.key == pygame.K_KP8:
+                if event.key == pygame.K_8 or event.key == pygame.K_KP8 or event.key == pygame.K_w:
                     SoundChannel_HITSOUND.play(Hit_Sound)
                     key_Press[7] = 1
                     if len(t8) > 0:
@@ -1418,7 +1418,7 @@ while IsRunning:
                             judge(t8[0][0])
                             del t8[0]
 
-                if event.key == pygame.K_9 or event.key == pygame.K_KP9:
+                if event.key == pygame.K_9 or event.key == pygame.K_KP9 or event.key == pygame.K_e:
                     SoundChannel_HITSOUND.play(Hit_Sound)
                     key_Press[8] = 1
                     if len(t9) > 0:
@@ -1444,23 +1444,23 @@ while IsRunning:
 
             #KEYUP  
             if event.type == pygame.KEYUP:
-                if event.key == pygame.K_1 or event.key == pygame.K_KP1:
+                if event.key == pygame.K_1 or event.key == pygame.K_KP1 or event.key == pygame.K_z:
                     key_Press[0] = 0
-                if event.key == pygame.K_2 or event.key == pygame.K_KP2:
+                if event.key == pygame.K_2 or event.key == pygame.K_KP2 or event.key == pygame.K_x:
                     key_Press[1] = 0
-                if event.key == pygame.K_3 or event.key == pygame.K_KP3:
+                if event.key == pygame.K_3 or event.key == pygame.K_KP3 or event.key == pygame.K_c:
                     key_Press[2] = 0
-                if event.key == pygame.K_4 or event.key == pygame.K_KP4:
+                if event.key == pygame.K_4 or event.key == pygame.K_KP4 or event.key == pygame.K_a:
                     key_Press[3] = 0
-                if event.key == pygame.K_5 or event.key == pygame.K_KP5:
+                if event.key == pygame.K_5 or event.key == pygame.K_KP5 or event.key == pygame.K_s:
                     key_Press[4] = 0
-                if event.key == pygame.K_6 or event.key == pygame.K_KP6:
+                if event.key == pygame.K_6 or event.key == pygame.K_KP6 or event.key == pygame.K_d:
                     key_Press[5] = 0
-                if event.key == pygame.K_7 or event.key == pygame.K_KP7:
+                if event.key == pygame.K_7 or event.key == pygame.K_KP7 or event.key == pygame.K_q:
                     key_Press[6] = 0
-                if event.key == pygame.K_8 or event.key == pygame.K_KP8:
+                if event.key == pygame.K_8 or event.key == pygame.K_KP8 or event.key == pygame.K_w:
                     key_Press[7] = 0
-                if event.key == pygame.K_9 or event.key == pygame.K_KP9:
+                if event.key == pygame.K_9 or event.key == pygame.K_KP9 or event.key == pygame.K_e:
                     key_Press[8] = 0
                     
         Time2 = time.time() - Time_Measure
